@@ -70,9 +70,9 @@ ros2 run anafi_test manual_control.py
 ```
 Notice: 
 
-right: Take off
+key.right: Take off
 
-left: Landing
+key.left: Landing
 
 w: X Direction (Forward)
 
@@ -155,14 +155,53 @@ The trajectory is in the shape of the circle. Larger x_speed, y_speed will enhan
 
 Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swith from the MPC mode to manual mode for safety.
 
+### Plot the Drone's Trajectory
+
+```bash
+python3 src/anafi_test/process_data/plot_move2point_linear_mpc.py
+python3 src/anafi_test/process_data/plot_move2point_newton_euler_mpc.py
+```
+
 ### Collect Parrot Drone's Figures
 
-### Collect Parrot Drone's Keypoints
+```bash
+ros2 run track_parrot collect_parrot_fig.py
+```
+### Label 2D Images for YOLO 2D BBox Model Training
 
-### Train YOLO 2D BBox
+```bash
+pip install labelImg
+labelImg
+```
+
+### Collect Parrot Drone's Keypoints for YOLO 3D BBox Model Training
+
+```bash
+ros2 launch get_keypoint_launch.py
+```
+
+### Train and Test YOLO 2D BBox
+
+```bash
+python3 src/track_parrot/train_drone_yolo_2d/train.py
+python3 src/track_parrot/train_drone_yolo_2d/test.py
+```
 
 ### Train YOLO 3D BBox
 
+```bash
+python3 src/track_parrot/train_drone_yolo_3d/train.py
+python3 src/track_parrot/train_drone_yolo_3d/test.py
+```
+
 ### Persue the Target Drone
 
+``bash
+ros2 launch pursuer_launch_yolo.py
+```
+notice:
 
+Click 'Start Tracking' after using "key.right" to take off the drone.
+
+Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swith from the tracking mode to manual mode for safety.
+ 
