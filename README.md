@@ -148,7 +148,7 @@ input four float value: x,y,z,yaw for reference point
 
 Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swith from the MPC mode to manual mode for safety.
 
-### Track the Reference Trajectory
+### Track the Reference Trajectory by Newton-Euler MPC
 
 ```bash
 ros2 run anafi_test move2point_linear_mpc.py
