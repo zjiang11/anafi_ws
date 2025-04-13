@@ -7,11 +7,6 @@ This project presents a comprehensive drone control system for the Anafi drone, 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Examples](#examples)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ---
@@ -142,6 +137,9 @@ python3 src/anafi_test/process_data/test_state_function_newton_euler_mpc.py
 ```bash
 ros2 run anafi_test move2point_linear_mpc.py
 ```
+
+![截图 2025-04-13 01-30-42](https://github.com/user-attachments/assets/dcb33b75-d015-4456-92e1-5818815513a1)
+
 notice:
 
 input four float value: x,y,z,yaw for reference point
@@ -153,6 +151,11 @@ Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swit
 ```bash
 ros2 run anafi_test move2point_linear_mpc.py
 ```
+![截图 2025-04-13 01-31-59](https://github.com/user-attachments/assets/4f25880c-a23c-4ce9-a39c-221b35ad4e0c)
+
+![截图 2025-04-13 01-32-38](https://github.com/user-attachments/assets/c9bbc890-0368-4e73-b9ac-aac83d7f02eb)
+
+
 notice:
 
 input eight float value: x,y,z,yaw for initial reference point. x_speed, y_speed, z_speed, yaw_speed for reference point moving speed.
@@ -192,6 +195,8 @@ ros2 launch get_keypoint_launch.py
 python3 src/track_parrot/train_drone_yolo_2d/train.py
 python3 src/track_parrot/train_drone_yolo_2d/test.py
 ```
+![截图 2025-04-13 01-27-50](https://github.com/user-attachments/assets/56b1ee1e-487c-49c7-b488-d9c8e5a932ff)
+
 
 ### Train YOLO 3D BBox
 
@@ -199,6 +204,8 @@ python3 src/track_parrot/train_drone_yolo_2d/test.py
 python3 src/track_parrot/train_drone_yolo_3d/train.py
 python3 src/track_parrot/train_drone_yolo_3d/test.py
 ```
+![截图 2025-04-13 01-27-10](https://github.com/user-attachments/assets/ba60f899-9bec-4ac3-b215-59e9054e75d7)
+
 
 ### Persue the Target Drone
 
@@ -216,4 +223,9 @@ Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swit
 ```bash
 python3 src/track_parrot/process_data/plot_tracking_data.py
 ```
- 
+
+![截图 2025-04-13 01-28-55](https://github.com/user-attachments/assets/d4c14230-8e24-4abe-8dba-c600f4695c7d)
+
+
+## Contact
+Email: zjiang11@ualberta.ca
