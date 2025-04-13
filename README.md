@@ -47,7 +47,39 @@ This project presents a comprehensive drone control system for the Anafi drone, 
 
 ```bash
 git clone https://github.com/zjiang11/anafi_ws.git
-cd anafi_drone_control
-
+```
+---
 
 ## Usage
+
+### Build Program
+
+```bash
+cd ~/anafi_ws
+colcon build
+source install/setup.bash
+```
+
+### Manual Control
+
+### Test Anafi Drone System state
+
+#### Linear MPC
+
+#### Newton-Euler MPC
+
+### Move to Reference Point
+
+### Track the Reference Trajectory
+
+### Collect Parrot Drone's Figures
+
+### Collect Parrot Drone's Keypoints
+
+### Train YOLO 2D BBox
+
+### Train YOLO 3D BBox
+
+### Persue the Target Drone
+
+
