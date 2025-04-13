@@ -138,8 +138,6 @@ python3 src/anafi_test/process_data/test_state_function_newton_euler_mpc.py
 ros2 run anafi_test move2point_linear_mpc.py
 ```
 
-![截图 2025-04-13 01-30-42](https://github.com/user-attachments/assets/dcb33b75-d015-4456-92e1-5818815513a1)
-
 notice:
 
 input four float value: x,y,z,yaw for reference point
@@ -151,10 +149,6 @@ Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swit
 ```bash
 ros2 run anafi_test move2point_linear_mpc.py
 ```
-![截图 2025-04-13 01-31-59](https://github.com/user-attachments/assets/4f25880c-a23c-4ce9-a39c-221b35ad4e0c)
-
-![截图 2025-04-13 01-32-38](https://github.com/user-attachments/assets/c9bbc890-0368-4e73-b9ac-aac83d7f02eb)
-
 
 notice:
 
@@ -167,9 +161,18 @@ Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swit
 ### Plot the Drone's Trajectory
 
 ```bash
-python3 src/anafi_test/process_data/plot_move2point_linear_mpc.py
 python3 src/anafi_test/process_data/plot_move2point_newton_euler_mpc.py
 ```
+
+![截图 2025-04-13 01-30-42](https://github.com/user-attachments/assets/dcb33b75-d015-4456-92e1-5818815513a1)
+
+```bash
+python3 src/anafi_test/process_data/plot_move2point_newton_euler_mpc.py
+```
+
+![截图 2025-04-13 01-31-59](https://github.com/user-attachments/assets/4f25880c-a23c-4ce9-a39c-221b35ad4e0c)
+
+![截图 2025-04-13 01-32-38](https://github.com/user-attachments/assets/c9bbc890-0368-4e73-b9ac-aac83d7f02eb)
 
 ### Collect Parrot Drone's Figures
 
