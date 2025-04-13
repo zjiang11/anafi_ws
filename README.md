@@ -93,10 +93,6 @@ x: Yaw Direction (Clockwise)
 
 ### Test Anafi Drone System state
 
-Notice:
-
-Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swith from the test mode to manual mode for safety.
-
 #### Linear MPC
 
 Implementing linear state function for MPC on drone
@@ -106,6 +102,11 @@ Implementing linear state function for MPC on drone
 ```bash
 ros2 run anafi_test collect_anafi_data_linear_mpc.py
 ```
+notice:
+
+Enter testing axis after using "key.right" to take off the drone.
+
+Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swith from the tracking mode to manual mode for safety.
 
 ##### Calculate and test Anafi Drone's System State Matrix
 
@@ -123,6 +124,11 @@ Implementing reference roll, pitch angles for MPC
 ```bash
 ros2 run anafi_test collect_anafi_data_newton_euler_mpc.py
 ```
+notice:
+
+Enter testing axis after using "key.right" to take off the drone.
+
+Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swith from the tracking mode to manual mode for safety.
 
 ##### Calculate and test Anafi Drone's System State Matrix
 
@@ -196,7 +202,7 @@ python3 src/track_parrot/train_drone_yolo_3d/test.py
 
 ### Persue the Target Drone
 
-``bash
+```bash
 ros2 launch pursuer_launch_yolo.py
 ```
 notice:
@@ -204,4 +210,10 @@ notice:
 Click 'Start Tracking' after using "key.right" to take off the drone.
 
 Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swith from the tracking mode to manual mode for safety.
+
+### PLot Tracking Process
+
+```bash
+python3 src/track_parrot/process_data/plot_tracking_data.py
+```
  
