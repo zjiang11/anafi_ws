@@ -161,7 +161,7 @@ Using keyboard for manual control (right, left, w, s, a, d, r, f, c, x) can swit
 ### Plot the Drone's Trajectory
 
 ```bash
-python3 src/anafi_test/process_data/plot_move2point_newton_euler_mpc.py
+python3 src/anafi_test/process_data/plot_move2point_linear_mpc.py
 ```
 
 ![截图 2025-04-13 01-30-42](https://github.com/user-attachments/assets/dcb33b75-d015-4456-92e1-5818815513a1)
