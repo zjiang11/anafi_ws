@@ -56,7 +56,6 @@ source /opt/ros/<ros2-distro>/setup.bash
 cd ~/anafi_ws
 pip install -r requirements.txt
 ```
-
 ---
 
 ## Usage
@@ -68,8 +67,9 @@ cd ~/anafi_ws
 colcon build
 source install/setup.bash
 ```
+
 ### Derive the Quaternions for Representing Pose
-The following code use /tf topic to subscribe ros2 message of 'TFMessage' for the pursuing drone (Anafi) and target drone (Bebop1).
+The following code use /tf topic with high frequency (above 100Hz) to subscribe ros2 message of 'TFMessage' for the pursuing drone (Anafi) and target drone (Bebop1).
 One way to accquire the TFMessage for both drones is to use Vicon System in Martin Barczyk's lab, (211, Mechenical Engineering Building, University of Alberta). The detail of setting up the Vicon system can be refered to https://gitlab.com/barczyk-mechatronic-systems-lab/anafi_ros2/-/tree/joshua?ref_type=heads
 
 ### Manual Control
