@@ -43,6 +43,20 @@ This project presents a comprehensive drone control system for the Anafi drone, 
 ```bash
 git clone https://github.com/zjiang11/anafi_ws.git
 ```
+
+### Install ROS2 Package
+
+```bash
+sudo apt install ros-<ros2-distro>-rclpy ros-<ros2-distro>-sensor-msgs ros-<ros2-distro>-tf2-msgs ros-<ros2-distro>-geometry-msgs ros-<ros2-distro>-cv-bridge
+source /opt/ros/<ros2-distro>/setup.bash
+```
+### Install Python Package
+
+```bash
+cd ~/anafi_ws
+pip install -r requirements.txt
+```
+
 ---
 
 ## Usage
