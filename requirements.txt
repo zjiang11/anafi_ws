@@ -1,0 +1,11 @@
+numpy
+opencv-python
+matplotlib
+pandas
+scikit-learn
+scipy
+casadi
+ultralytics
+transforms3d
+pynput
+tk
