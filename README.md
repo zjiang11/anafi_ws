@@ -1,5 +1,7 @@
 # Anafi Drone Control System
 
+https://github.com/user-attachments/assets/75198e3d-f4f3-42eb-8cb0-6d54497a4115
+
 This project presents a comprehensive drone control system for the Anafi drone, developed using ROS2. The system encompasses manual control via keyboard inputs, Model Predictive Control (MPC) for navigating to reference points and tracking predefined trajectories, and vision-based 3D position estimation of a target drone utilizing YOLOv8. By integrating MPC with real-time visual detection, the drone can effectively track and follow a moving target drone.
 
 ## Table of Contents
