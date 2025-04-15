@@ -35,8 +35,8 @@ This project presents a comprehensive drone control system for the Anafi drone, 
 
 - Ubuntu 22.04  
 - ROS2 Humble  
-- Python 3.10+  
-- Docker (optional for isolation)  
+- Python 3.10+
+- CUDA 11.8 or above (for GPU acceleration)  
 - Parrot Anafi SDK  
 - OpenCV, NumPy, SciPy, CasADi, cv_bridge, sensor_msgs, geometry_msgs, etc.
 
@@ -52,6 +52,13 @@ git clone https://github.com/zjiang11/anafi_ws.git
 sudo apt install ros-<ros2-distro>-rclpy ros-<ros2-distro>-sensor-msgs ros-<ros2-distro>-tf2-msgs ros-<ros2-distro>-geometry-msgs ros-<ros2-distro>-cv-bridge
 source /opt/ros/<ros2-distro>/setup.bash
 ```
+
+### Install Anafi SDK
+
+```bash
+pip3 install parrot-olympe
+```
+
 ### Install Python Package
 
 ```bash
