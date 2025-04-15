@@ -35,7 +35,7 @@ This project presents a comprehensive drone control system for the Anafi drone, 
 
 - Ubuntu 22.04  
 - ROS2 Humble  
-- Python 3.10+
+- Python 3.8+
 - CUDA 11.8 or above (for GPU acceleration)  
 - Parrot Anafi SDK  
 - OpenCV, NumPy, SciPy, CasADi, cv_bridge, sensor_msgs, geometry_msgs, etc.
@@ -65,6 +65,11 @@ pip3 install parrot-olympe
 cd ~/anafi_ws
 pip install -r requirements.txt
 ```
+
+### Install CUDA
+
+Visit https://developer.nvidia.com/cuda-downloads for CUDA download.
+
 ---
 
 ## Usage
